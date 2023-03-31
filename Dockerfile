@@ -2,7 +2,7 @@ FROM caddy:builder AS builder
 
 RUN caddy-builder \
     github.com/caddyserver/cache-handler \
-    github.com/mholt/caddy-dynamicdns
+    github.com/caddy-dns/cloudflare 
 
 FROM caddy:latest
 
